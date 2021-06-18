@@ -1,11 +1,15 @@
 package Staps;
-
+import Elementos.Elementos;
+import Pages.Metodos;
+import Pages.abrirBrowser;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
 
 public class Tests {
-
+abrirBrowser ab = new abrirBrowser();	
+Metodo mt = new Metodos();
+	Elementos el = new Elementos();
 	@Dado("que eu esteja no {string}")
 	public void que_eu_esteja_no(String string) {
 	    
